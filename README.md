@@ -69,7 +69,6 @@ this.data.set("index", index) sets the element's data-slideshow-index attribute 
 
 For example, to persist the `data-slideshow-index` state to the controller
 
-# src/controllers/hello_controller.js
 ```
 import { Controller } from "stimulus"
 
