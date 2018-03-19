@@ -39,6 +39,18 @@ $ yarn start
 
 # Controller
 
+Each _underscore_ in a controller's filename translates to a _dash_ in its identifier.
+
+Each _forward slash_ in a namespaced controller file's path becomes _two dashes_ in its identifier.
+
+```
+If your controller file is named        its identifier will be
+clipboard_controller.js                 => clipboard
+date_picker_controller.js               => date-picker
+users/list_item_controller.js           => users--list-item
+local-time-controller.js                => local-time
+```
+
 ```
 # src/controllers/hello_controller.js
 import { Controller } from "stimulus"
